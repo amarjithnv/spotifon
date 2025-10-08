@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy 24/7 Hardcore - Spotify Clone</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        background-color: #121212;
+        font-family: "Inter", sans-serif;
+      }
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-thumb {
+        background-color: #444;
+        border-radius: 8px;
+      }
+    </style>
+  </head>
+  <body class="text-white flex h-screen overflow-hidden">
+    <!-- Sidebar -->
+    <aside class="w-64 bg-black flex flex-col justify-between">
+      <div>
+        <div class="px-6 py-4 text-2xl font-bold text-white">Spotify</div>
+        <nav class="px-4 space-y-3">
+          <div class="flex items-center space-x-3 text-gray-300 hover:text-white cursor-pointer">
+            <svg class="w-6 h-6" fill="currentColor"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+            <span>Home</span>
+          </div>
+          <div class="flex items-center space-x-3 text-gray-300 hover:text-white cursor-pointer">
+            <svg class="w-6 h-6" fill="currentColor"><circle cx="12" cy="12" r="3"/><path d="M19.4 15A8 8 0 1115 4.6a9 9 0 104.4 10.4z"/></svg>
+            <span>Search</span>
+          </div>
+          <div class="flex items-center space-x-3 text-gray-300 hover:text-white cursor-pointer">
+            <svg class="w-6 h-6" fill="currentColor"><path d="M4 3h16v2H4zm0 4h10v2H4zm0 4h16v2H4zM4 15h10v2H4z"/></svg>
+            <span>Your Library</span>
+          </div>
+        </nav>
+
+        <div class="border-t border-gray-700 mt-6 mx-4"></div>
+
+        <div class="mt-4 px-4 space-y-2">
+          <div class="text-gray-400 uppercase text-xs font-semibold tracking-wider">Playlists</div>
+          <div class="text-white font-semibold cursor-pointer hover:text-green-400">Happy 24/7 Hardcore</div>
+          <div class="text-gray-300 cursor-pointer hover:text-white">Liked Songs</div>
+          <div class="text-gray-300 cursor-pointer hover:text-white">10 Years Da Tweekaz</div>
+        </div>
+      </div>
+
+      <div class="p-4 border-t border-gray-800 text-gray-400 text-sm">
+        © 2025 Spotify Clone
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="flex-1 flex flex-col bg-gradient-to-b from-[#b85c4d] to-[#121212] overflow-y-auto">
+      <!-- Header Section -->
+      <div class="flex items-end space-x-6 p-8">
+        <img src="https://picsum.photos/100/100?random=5" alt="Album Cover" class="w-48 h-48 shadow-2xl rounded" />
+        <div>
+          <p class="uppercase text-sm font-semibold">Public Playlist</p>
+          <h1 class="text-6xl font-extrabold">Happy 24/7 Hardcore</h1>
+          <p class="mt-3 text-gray-200 max-w-lg">These are the best hardcore’s, refreshed every week. You might find songs, even the ones we’ve never heard about :')</p>
+          <p class="mt-2 text-sm text-gray-300">vaaiy • 14 likes • 1092 songs, 104 hr 35 min</p>
+        </div>
+      </div>
+
+      <!-- Control Bar -->
+      <div class="px-8 py-4 flex items-center space-x-6">
+        <button class="bg-green-500 hover:bg-green-400 w-14 h-14 rounded-full flex items-center justify-center text-black">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-8 h-8" viewBox="0 0 16 16">
+            <path d="M11.596 8.697l-6.363 3.692A.5.5 0 0 1 4.5 11.946V4.054a.5.5 0 0 1 .733-.443l6.363 3.692a.5.5 0 0 1 0 .894z"/>
+          </svg>
+        </button>
+        <button class="text-gray-400 hover:text-white">
+          <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path d="M5 12h14M12 5l7 7-7 7" />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Song List -->
+      <div class="px-8">
+        <table class="w-full text-left">
+          <thead class="text-gray-400 text-sm border-b border-gray-700">
+            <tr>
+              <th class="py-2 w-10">#</th>
+              <th class="py-2">Title</th>
+              <th class="py-2">Album</th>
+              <th class="py-2">Date Added</th>
+              <th class="py-2 text-right">⏱</th>
+            </tr>
+          </thead>
+          <tbody class="text-gray-200 text-sm divide-y divide-gray-800">
+            <tr class="hover:bg-white/10">
+              <td class="py-3">1</td>
+              <td class="py-3">
+                <div>
+                  <div class="font-semibold text-white">You’re My Angel</div>
+                  <div class="text-gray-400 text-xs">Styles & Breeze</div>
+                </div>
+              </td>
+              <td>Skydivin’</td>
+              <td>2. syysk. 2021</td>
+              <td class="text-right">5:15</td>
+            </tr>
+            <tr class="hover:bg-white/10">
+              <td class="py-3">2</td>
+              <td>
+                <div>
+                  <div class="font-semibold text-white">Commence - Original Mix</div>
+                  <div class="text-gray-400 text-xs">Scott Brown, Plus System</div>
+                </div>
+              </td>
+              <td>Evolution Plus Classics</td>
+              <td>2. syysk. 2021</td>
+              <td class="text-right">4:45</td>
+            </tr>
+            <tr class="hover:bg-white/10">
+              <td class="py-3">3</td>
+              <td>
+                <div>
+                  <div class="font-semibold text-white">Hero</div>
+                  <div class="text-gray-400 text-xs">Rob IYF, Nobody</div>
+                </div>
+              </td>
+              <td>Hero</td>
+              <td>2. syysk. 2021</td>
+              <td class="text-right">4:45</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+  </body>
+</html>
